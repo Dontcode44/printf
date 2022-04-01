@@ -3,12 +3,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_d - A function that prints a integer 
- * @list: Character
+ * print_d - A function that prints a integer
+ * @args: Variadic list
  * Return: size of number
  */
 int print_d(va_list args)
-{	
+{
 	unsigned int absolute, aux, countnum, count;
 	int n;
 
