@@ -1,21 +1,27 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
- * print_percent - prints a string
- * @args: Arguments character
- * Return: Print character c
- */
-int print_percent(va_list args)
+ * print_s - prints a string
+ * @args: arguments character
+ * Return: print character c
+ **/
+int print_s(va_list args)
 {
-	int count = 0;
+	int j = 0;
 	char *str;
 
-	str = "%";
-	if (va_arg(args, int) == *str)
+	str = va_arg(args, char *);
+	if (str == NULL)
 	{
-		_putchar(*str);
+		str = "(null)";
 	}
-	return (count);
+	for (j = 0; str[j]; j++)
+	{
+		_putchar(str[j]);
+	}
+	return (j);
 }
+

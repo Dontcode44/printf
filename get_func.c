@@ -28,3 +28,4 @@ int (*get_func(const char *format))(va_list)
 	}
 	return (arr[i].f);
 }
+
