@@ -12,7 +12,7 @@ int print_b(va_list args)
 	int i = 0, n, one = 1, zero = 0;
 
 	n = va_arg(args, int);
-	while (m > 0)
+	while (n > 0)
 	{
 		if (n % 2 == 0)
 		{
@@ -21,5 +21,6 @@ int print_b(va_list args)
 		}
 		else
 			_putchar(zero);
-	return (count);
+	}
+	return (i);
 }
